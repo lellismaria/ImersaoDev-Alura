@@ -1,0 +1,41 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Calculadora de Média</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="page-title">
+      Calculadora de Média</h1>
+    <p class="page-subtitle">
+      Vamos descobrir qual a sua média!
+    </p>
+      <section class="content">
+    <div class="campo-nota">
+      <label for="notaPrimeiroBimestre">Insira aqui sua nota do Primeiro Bimestre: </label><br>
+      <input type="number" id="notaPrimeiroBimestre"><br>
+    </div>
+    <div class="campo-nota">
+      <label for="notaSegundoBimestre">Insira aqui sua nota do Segundo Bimestre: </label><br>
+      <input type="number" id="notaSegundoBimestre"><br>
+    </div>
+    <div class="campo-nota">
+      <label for="notaTerceiroBimestre">Insira aqui sua nota do Terceiro Bimestre :</label><br>
+      <input type="number" id="notaTerceiroBimestre"><br>
+    </div>
+    <div class="campo-nota">
+      <label for="notaPrimeiroBimestre">Insira aqui sua nota do Quarto Bimestre: </label><br>
+      <input type="number" id="notaQuartoBimestre"><br>
+    </div>
+    <button type="submit" onclick="validarCampos()">Calcular Média</button>
+    <div id="resultado">        
+    </div>
+  </div>
+  <a href="https://alura.com.br/" target="_blank">
+    <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+  </a>
+  
+  <script  src="script.js"></script>
+</body>
+</html>
