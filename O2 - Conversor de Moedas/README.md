@@ -26,12 +26,12 @@ As seguintes ferramentas foram usadas nas construções dos projetos:
 - https://conversordemoeda.vercel.app/
 
 
----
+----
 
 # Resultado
 ![print](https://64.media.tumblr.com/36dddfa5b60f627a29d581a235e7d144/3f75e4b3a944a93f-00/s2048x3072/70e9688e8adc84af3006d6633a69626a421c1f63.pnj)
 
----
+----
 
 ### 📝 Licença
 
