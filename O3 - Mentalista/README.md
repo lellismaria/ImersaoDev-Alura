@@ -26,7 +26,7 @@ As seguintes ferramentas foram usadas nas construções dos projetos:
 - https://mentalista-murex.vercel.app/
 
 
----
+----
 
 # Resultado
 ![print](https://64.media.tumblr.com/c10a8e366d630ef04426656aec9d5baa/011c0b08c1d1c7fd-5f/s2048x3072/924e810994d1588419a39c5e9e21b57375e02c47.pnj)
