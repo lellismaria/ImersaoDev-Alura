@@ -1,0 +1,374 @@
+<html>
+
+<head>
+  <title>
+    Imersão Dev - Aula 06
+  </title>
+</head>
+
+<body>
+  <h1>Tabela de Classificação - Comissão do Vasco</h1>
+<style> 
+
+    * {
+        text-align: center;
+        margin: 5px 0px 0px;
+      }
+      
+      body {
+        font-family: "Roboto Mono", monospace;
+        min-height: 50em;
+        background-image: url("https://newevolutiondesigns.com/images/freebies/4k-space-wallpaper-1.jpg");
+        background-color: #111;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
+      }
+      
+      .container {
+        text-align: center;
+        padding: 20px;
+        height: 100vh;
+      }
+      
+      .page-title {
+        color: #ffffff;
+        margin: 0 0 5px;
+      }
+      
+      .page-subtitle {
+        color: #ffffff;
+        margin-top: 5px;
+      }
+      
+      .page-logo {
+        width: 200px;
+      }
+      
+      .alura-logo {
+        width: 40px;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+      }
+      
+      table {
+        border: 1px solid white;
+        background-color: rgb(121, 0, 214);
+        max-width: 100px;
+        border-collapse: collapse;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      
+      h1 {
+        color: white;
+      }
+      
+      th,
+      tr,
+      td {
+        border: solid 1px black;
+        color: #ebebeb;
+        font-size: 25px;
+        width: 100%;
+      }
+      
+      tr {
+        color: red;
+      }
+      
+      button {
+        font-size: 17px;
+        border-radius: 10px;
+      }
+      
+      input::placeholder {
+        color: white;
+      }
+      
+      .aplicacao {
+        font-size: 18px;
+        border: solid 1px white;
+        border-radius: 10px;
+        font-weight: 700;
+        background: rgb(180, 82, 255);
+        margin: 8px 0px 0px 0px;
+        padding: 6px 0px 5px 0px;
+        color: white;
+      }
+      
+      .estilizandoBotao {
+        font-size: 18px;
+        border: solid 1px white;
+        border-radius: 10px;
+        color: #ebebeb;
+        font-weight: 700;
+        background: rgb(180, 82, 255);
+        margin: 5px 5px 5px 15px;
+        padding: 7px 10px 5px 10px;
+      }
+      
+      .imgEstilizar {
+        width: 80px;
+        max-height: 100%;
+        border: solid 1px white;
+        border-radius: 5em;
+        margin: 10px 10px 1px 10px;
+        height: 45px;
+        width: 45px;
+      }
+      
+      .estil {
+        font-size: 20px;
+      }
+      
+      .zera1 {
+        justify-content: space-between;
+      }
+      
+      .zera2 {
+        border: solid 1px white;
+        border-radius: 100px;
+        color: #ebebeb;
+        font-weight: 700;
+        background: inherit;
+        margin: 5px;
+        padding: 7px 10px 5px 10px;
+        background-color: rgb(180, 82, 255);
+      }
+      
+      .zera3 {
+        border: solid 1px white;
+        border-radius: 100px;
+        color: #ebebeb;
+        font-weight: 700;
+        background: inherit;
+        margin: 5px;
+        padding: 7px 10px 5px 10px;
+        background-color: rgb(180, 82, 255);
+      }
+</style>
+  <table style="width:100%">
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Vitórias</th>
+        <th>Empates</th>
+        <th>Derrotas</th>
+        <th>Pontos</th>
+        <th colspan="3">Ações</th>
+      </tr>
+    </thead>
+    <div class="zera1">
+      <button class="zera2" onClick="zeraPlayer()">Remover Jogadores</button>
+      <button class="zera3" onClick="zeraTudo()">Zerar Pontuação</button>
+    </div>
+    <tbody id="tabelaJogadores">
+    </tbody>
+  </table>
+  <input class="aplicacao" type="text" id="nomeJogador" placeholder="Nome do Jogador">
+  <input class="aplicacao" type="url" id="imgJogador" placeholder="Insira a imagem">
+  <button class="estilizandoBotao" onClick="botao()">Adicionar</button>
+<script> 
+    var skaiis = {
+        nome: "sKaiis",
+        avatar:
+          "https://64.media.tumblr.com/63f5995c86922522d92aa63bd06bcd3e/a1c222616579d804-7b/s400x600/c0573a3f25ddc2bdcf142cb77eb2eeb2a51e4dca.png",
+        vitorias: 0,
+        empates: 0,
+        derrotas: 0,
+        pontos: 0
+      };
+      var motoca = {
+        nome: "Mottoca",
+        avatar:
+          "https://64.media.tumblr.com/9727767b596a6f56b02f06087d048bec/a1c222616579d804-ea/s400x600/9a4c999b5921615dda7b67635d1a1a05dbd7e4be.png",
+        vitorias: 0,
+        empates: 0,
+        derrotas: 0,
+        pontos: 0
+      };
+      var mihzao = {
+        nome: "Mihzão",
+        avatar:
+          "https://64.media.tumblr.com/5048a4db96b3d2910adca0f7483038ca/a1c222616579d804-02/s400x600/e6c1e55a8334a44fb7a1e6f1ca5b3174a5f5603a.png",
+        vitorias: 0,
+        empates: 0,
+        derrotas: 0,
+        pontos: 0
+      };
+      var hantaro = {
+        nome: "Hantaro",
+        avatar:
+          "https://64.media.tumblr.com/5456fa3d0787644e30be997d2f00eae4/a1c222616579d804-08/s400x600/a7b2cadebd5523101477686fa3ff9a97e69b6c1a.png",
+        vitorias: 0,
+        empates: 0,
+        derrotas: 0,
+        pontos: 0
+      };
+      var karol = {
+        nome: "Karol",
+        avatar:
+          "https://64.media.tumblr.com/b927ba3f001bbff447238db356ae4675/a1c222616579d804-9d/s400x600/d927c78bb9450e05db85152f245191453fd6a0d6.png",
+        vitorias: 0,
+        empates: 0,
+        derrotas: 0,
+        pontos: 0
+      };
+      var pedroxxy = {
+        nome: "iPedroxxy",
+        avatar:
+          "https://64.media.tumblr.com/b31961648896ca180f2d6170b7f1af12/a1c222616579d804-72/s540x810/97a86afda3d82459b1a369ef4b2a7fbc84b0f1a5.png",
+        vitorias: 0,
+        empates: 0,
+        derrotas: 0,
+        pontos: 0
+      };
+      var evox = {
+        nome: "Evox",
+        avatar:
+          "https://64.media.tumblr.com/ce176df5d0d62c7b2c6c12f1218f6e51/a1c222616579d804-d0/s400x600/8ca233a838908ee81f1eb2426f9c6abb14a1e875.png",
+        vitorias: 0,
+        empates: 0,
+        derrotas: 0,
+        pontos: 0
+      };
+      var thulio = {
+        nome: "Thulin",
+        avatar:
+          "https://64.media.tumblr.com/5bd02987478d61564e7047d0f356de37/a1c222616579d804-4f/s400x600/16e71696b2bb4867ed6b630eabe9a5dc8b119517.png",
+        vitorias: 0,
+        empates: 0,
+        derrotas: 0,
+        pontos: 0
+      };
+      
+      function calculaPontos(jogador) {
+        var pontos = jogador.vitorias * 3 + jogador.empates;
+        return pontos;
+      }
+      
+      skaiis.pontos = calculaPontos(skaiis);
+      motoca.pontos = calculaPontos(motoca);
+      mihzao.pontos = calculaPontos(mihzao);
+      hantaro.pontos = calculaPontos(hantaro);
+      karol.pontos = calculaPontos(karol);
+      pedroxxy.pontos = calculaPontos(pedroxxy);
+      evox.pontos = calculaPontos(evox);
+      thulio.pontos = calculaPontos(thulio);
+      
+      var jogadores = [
+        skaiis,
+        motoca,
+        mihzao,
+        hantaro,
+        karol,
+        pedroxxy,
+        evox,
+        thulio
+      ];
+      
+      function botao() {
+        var idJogador = document.getElementById("nomeJogador").value;
+        var imgJogador = document.getElementById("imgJogador").value;
+        if ((!idJogador, !imgJogador)) {
+          alert(
+            "Preencha os campos requeridos para seu Avatar. Lembre-se da imagem ser em .jpg ou .png!"
+          );
+          return;
+        }
+        if (jogadores.includes(idJogador)) {
+          alert("Id de jogador ja criado, crie um novo.");
+          document.getElementById("nomeJogador").value = "";
+          return;
+        } else {
+          let jogador = {
+            nome: idJogador,
+            avatar: imgJogador,
+            vitorias: 0,
+            empates: 0,
+            derrotas: 0,
+            pontos: 0
+          };
+          jogadores.push(jogador);
+          exibeNaTela(jogadores);
+          document.getElementById("nomeJogador").value = "";
+          document.getElementById("imgJogador").value = "";
+        }
+      }
+      
+      function exibeNaTela(jogadores) {
+        var elemento = "";
+        for (var i = 0; i < jogadores.length; i++) {
+          elemento +=
+            "<tr><td><img class='imgEstilizar' src='" +
+            jogadores[i].avatar +
+            "'><p>" +
+            jogadores[i].nome +
+            "</p></td>";
+          elemento += "<td class='estil'>" + jogadores[i].vitorias + "</td>";
+          elemento += "<td class='estil'>" + jogadores[i].empates + "</td>";
+          elemento += "<td class='estil'>" + jogadores[i].derrotas + "</td>";
+          elemento += "<td class='estil'>" + jogadores[i].pontos + "</td>";
+          elemento +=
+            "<td class='estil'><button onClick='adicionarVitoria(" +
+            i +
+            ")'>Vitória</button></td>";
+          elemento +=
+            "<td class='estil'><button onClick='adicionarEmpate(" +
+            i +
+            ")'>Empate</button></td>";
+          elemento += "</tr>";
+        }
+        var tabelaJogadores = document.getElementById("tabelaJogadores");
+        tabelaJogadores.innerHTML = elemento;
+      }
+      
+      exibeNaTela(jogadores);
+      
+      function adicionarVitoria(i) {
+        var jogador = jogadores[i];
+        jogador.vitorias++;
+        for (var i = 0; i < jogadores.length; i++) {
+          if (!(jogadores[i] === jogador)) {
+            jogadores[i].derrotas++;
+          }
+        }
+        jogador.pontos = calculaPontos(jogador);
+        exibeNaTela(jogadores);
+      }
+      
+      function adicionarEmpate(i) {
+        var jogador = jogadores[i];
+        for (var i = 0; i < jogadores.length; i++) {
+          jogadores[i].empates++;
+          jogadores[i].pontos++;
+        }
+        jogador.pontos = calculaPontos(jogador);
+        exibeNaTela(jogadores);
+      }
+      
+      function zeraPlayer(i) {
+        jogadores.pop();
+        exibeNaTela(jogadores);
+      }
+      
+      function zerarPontos(jogador) {
+        jogador.vitorias = 0;
+        jogador.empates = 0;
+        jogador.derrotas = 0;
+        jogador.pontos = 0;
+      }
+      
+      function zeraTudo() {
+        for (let i = 0; i < jogadores.length; i++) {
+          let jogador = jogadores[i];
+          zerarPontos(jogador);
+        }
+        exibeNaTela(jogadores);
+      } 
+</script>
+</body>
+
+</html>
