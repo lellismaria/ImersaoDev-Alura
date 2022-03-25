@@ -10,7 +10,7 @@
 ---
 
 #### Projetos da Imersão Dev
-1. [Conversor de Moedas] 
+1. [Conversor de Moedas](https://github.com/lellismaria/ImersaoDev-Alura/tree/main/O1%20-%20Calculadora%20de%20M%C3%A9dia) 
 2. [Calculadora]
 3. [Mentalista]
 4. [AluraFlix]
