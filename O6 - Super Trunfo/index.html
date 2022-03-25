@@ -1,0 +1,341 @@
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUPERTRUNFO ASSASSIN'S CREED</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style> 
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        background: url("https://img.wallpapersafari.com/desktop/1600/900/55/31/UJ376L.jpg");
+        background-repeat: no-repeat;
+       background-size: 100%;
+        min-height: 100vh;
+        min-width: 90vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    
+    ::-webkit-scrollbar {
+        width: 5px;
+    }
+    
+    ::-webkit-scrollbar-track {
+        background: #7700ff;
+        border-radius: 8px;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        background: rgb(7, 7, 7);
+        border-radius: 8px;
+    }
+    
+    ::-webkit-scrollbar-thumb:hover {
+        background: transparent;
+    }
+    
+    .card {
+        user-select: none;
+        float: left;
+        text-align: center;
+        padding: 20px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 8px;
+        margin: 10px 10px;
+        padding: 8px;
+        width: 300px;
+        height: 450px;
+        margin-top: 30px;
+    }
+    
+    .card .atributos {
+        border-radius: 9px;
+        padding: 1px;
+        position: relative;
+        width: 100%;
+        height: auto;
+        white-space: normal;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin-top: 10px;
+        border: 3px outset CornflowerBlue;
+    }
+    
+    .card img {
+        width: 200px;
+        height: 280px;
+        object-fit: cover;
+        border: 2px solid #2E86C1;
+        pointer-events: none;
+    }
+    
+    .card #cardName {
+        font-size: 14px;
+        font-weight: bold;
+        position: relative;
+        text-overflow: ellipsis;
+        height: 25px;
+    }
+    
+    .card #atrJogador:hover {
+        background-color: #000000;
+        color: white;
+        cursor: pointer;
+    }
+    
+    .btnMenu {
+        position: absolute;
+        top: 115px;
+    }
+    
+    .btnMenu button {
+        height: 70px;
+        width: 170px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        background-color: rgb(59, 0, 155);
+        font-size: 20px;
+        color: white;
+        font-weight: bold;
+        border: 2px groove white;
+        box-shadow: 8px 4px 15px rgba(0, 0, 0, 0.473);
+    }
+    
+    .btnMenu button:hover {
+        color: ;
+        box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.705);
+        border: #4a00e0 solid 2px;
+    }
+    
+    #Maquina {
+        display: none;
+    }
+    
+    #res {
+        bottom: 90px;
+        color: white;
+        position: absolute;
+        font-size: 40px;
+        font-weight: bold;
+        background-color: rgb(59, 0, 155);
+        padding: 10px;
+        border-radius: 20px;
+        border: 2px groove white;
+        box-shadow: 8px 4px 15px rgba(0, 0, 0, 0.473);
+        display: none;
+    }   
+</style>
+
+<body>
+    <div class="btnMenu">
+        <button onclick="selecionarCarta()" id='sortear'>Escolha uma Carta</button>
+    </div>
+
+    <div>
+        <div id="cardArea">
+        </div>
+    </div>
+    <div id='res'>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        const cartas = [
+        {
+            nome: "Aveline de Grandpré",
+            img: "http://pm1.narvii.com/6351/8bafcecc62531e50febc105ed37ffef9830828ba_00.jpg",
+            atributos: {
+                Stealth: 8, 
+                Ataque: 7,
+               Velocidade: 8,
+            }
+        },
+        {
+            nome: "Arno Dorian",
+            img: "https://i.pinimg.com/originals/4a/1e/1a/4a1e1a0c94b8f544f3f2f6134a605ab3.jpg",
+            atributos: {
+                Stealth: 10,
+                Ataque: 8,
+                Velocidade: 10,
+    
+            }
+        },
+        {
+            nome: "Altaïr",
+            img: "https://dogtrainingobedienceschool.com/pic/1481514_full-assassins-creed-quotes-respect-assassins-creed-10-wisest-altair-quotes-game-rant.jpg",
+            atributos: {
+                Stealth: 8,
+                Ataque: 6,
+                Velocidade: 8,
+            }
+        },
+        {
+            nome: "Ezio Auditore",
+            img: "https://i.pinimg.com/originals/74/2a/82/742a8234cab062ba2979cd2d890e1f55.png",
+            atributos: {
+               Stealth: 9,
+               Ataque: 8,
+               Velocidade: 7,
+            }
+        },
+        {
+            nome: "Kassandra",
+            img: "https://www.meme-arsenal.com/memes/20ec87e39f6fabb681ee09f7bb7106f1.jpg",
+            atributos: {
+                Stealth: 6,
+                Ataque: 9,
+                Velocidade: 9,
+            }
+        },
+        {
+            nome: "Jacob Frye",
+            img: "https://c4.wallpaperflare.com/wallpaper/366/102/377/assassin-s-creed-jacob-frye-syndicate-assassin-s-creed-syndicate-wallpaper-thumb.jpg",
+            atributos: {
+                Stealth: 8,
+                Ataque: 5,
+                Velocidade: 8,
+            }
+        },
+        {
+            nome: "Eivor",
+            img: "https://www.10wallpaper.com/wallpaper/2880x1800/2102/Assassins_Creed_Eivor_AC_2021_Game_HD_Poster_2880x1800.jpg",
+            atributos: {
+                Stealth: 5,
+                Ataque: 8,
+                Velocidade: 7,
+            }
+        },
+        {
+            nome: "Evie Frye",
+            img: "https://images8.alphacoders.com/884/884020.jpg",
+            atributos: {
+                Stealth: 8,
+                Ataque: 5,
+                Velocidade: 8,
+            }
+        },
+        {
+            nome: "Bayek",
+            img: "https://i.pinimg.com/originals/b5/96/6d/b5966db6dd6c28afe02ed0e5c30458bb.jpg",
+            atributos: {
+                Stealth: 5,
+                Ataque: 7,
+                Velocidade: 9,
+            }
+        },
+        {
+            nome: "Edward Kenway",
+            img: "https://pm1.narvii.com/6361/369c2e6e5e52c1f41f741e049a708f113a6a0c49_hq.jpg",
+            atributos: {
+                Stealth: 8,
+                Ataque: 7,
+                Velocidade: 10, 
+            }
+        },
+        {
+            nome: "Shay Cormac",
+            img: "https://assets1.ignimgs.com/2014/10/13/shay-cormac-1280jpg-800677_160w.jpg?width=1280",
+            atributos: {
+                Stealth: 8,
+                Ataque: 7,
+               Velocidade: 10,
+            }
+        },
+      {
+            nome: "Connor Kenway",
+            img: "https://i.pinimg.com/originals/3c/f1/b6/3cf1b625c4df23d95fa1e5be63594e3e.jpg",
+            atributos: {
+                Stealth: 8,
+                Ataque: 6,
+                Velocidade: 8,
+            }
+        },
+    ]
+    
+    let cartaMaquina;
+    let cartaJogador;
+    
+    let cardArea = document.getElementById('cardArea');
+    let res = document.getElementById('res');
+    
+    function selecionarCarta() {
+    
+        cardArea.innerHTML = '';
+        res.style.display = 'none'
+        res.innerHTML = ''
+    
+        let idCardJogador = parseInt(Math.random() * cartas.length);
+        var idCardMaquina = parseInt(Math.random() * cartas.length);
+        while (idCardJogador == idCardMaquina) {
+            var idCardMaquina = Math.floor(Math.random() * cartas.length);
+        }
+    
+        cartaJogador = cartas[idCardJogador];
+        cartaMaquina = cartas[idCardMaquina];
+    
+        colocarCartas(cartaJogador, 'Jogador')
+    
+        colocarCartas(cartaMaquina, 'Maquina')
+    }
+    
+    
+    function colocarCartas(id, player) {
+    
+        cardArea.innerHTML += `
+        <div id='${player}' class="card">
+        <div id='cardName'>
+            <h2>${id.nome}</h2>
+        </div>
+        <div id='cardIMG'>
+            <img src="${id.img}" alt="">
+        </div>
+        <div id="atributos${player}" class='atributos'>
+        </div>
+        </div>
+        `
+    
+        for (let atributo in id.atributos) {
+            document.getElementById(`atributos${player}`).innerHTML +=
+            `<div id='atr${player}' onclick="play('${atributo}')">
+            <p>${atributo}</>
+            <h4>${id.atributos[atributo]}</h4>
+            </div>`
+        }
+    
+        setTimeout(() => {
+            document.getElementById('sortear').style.display = 'none';
+        }, 100);
+    }
+    
+    function play(atributo) {
+        let jogadorAtributo = cartaJogador.atributos[atributo];
+        let maquinaAtributo = cartaMaquina.atributos[atributo];
+    
+        document.getElementById('Maquina').style.display = 'block';
+        document.getElementById('sortear').innerText = 'Jogue Novamente'
+        document.getElementById('sortear').style.display = 'block';
+    
+        if (jogadorAtributo > maquinaAtributo) {
+            res.innerHTML = 'Rodada Ganha!'
+    
+        } else if (jogadorAtributo < maquinaAtributo) {
+            res.innerHTML = 'Rodada Perdida!'
+        } else {
+            res.innerHTML = 'Empatamos!'
+        }
+        res.style.display = 'block'
+    }
+    </script>
+</body>
+
+</html>
