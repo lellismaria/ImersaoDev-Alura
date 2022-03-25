@@ -17,7 +17,7 @@ As seguintes ferramentas foram usadas nas construções dos projetos:
 - Editor [CondePen](https://codepen.io/)
 - [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
 - [HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
-- [CSS](https://www.w3.org/)
+- [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
 
 ---
 
