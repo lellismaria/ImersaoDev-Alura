@@ -2,11 +2,11 @@
 
 
 
-# :1234: Calculadora de Média
+# 🏆 Tabela de Classificação
 
 ## 💻 Sobre o projeto
 
-Aula 01 da Imersão Dev da Alura. Foi proposto pela equipe que fizessemos uma calculadora de média baseada na nota de 4 provas. A média de aprovação é 7. 
+Neste projeto foi feito uma tabela de classificação simples, com botões para adicionar jogador e o placar de vitória, empate e derrota. A tabela de classificação serve para marcar a quantidade de pontos que cada jogador fez. Vitória = 3, empate = 1, derrota = 0.
 
 ---
 
@@ -23,13 +23,13 @@ As seguintes ferramentas foram usadas nas construções dos projetos:
 
 ### :eyes: Para visualizar o projeto:
 
-- https://calculadora-olive.vercel.app/
+- 
 
 
 ---
 
 # Resultado
-![print](https://64.media.tumblr.com/0c8172774087177356f5cc68a1ef52ae/4824e67528c6bd9b-0f/s2048x3072/dffa378f93980747e8f425a1775cc231d32d360b.pnj)
+![print]()
 
 ---
 
