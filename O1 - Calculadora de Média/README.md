@@ -21,7 +21,7 @@ As seguintes ferramentas foram usadas nas construções dos projetos:
 
 ---
 
-### :eyes: Para visualizar o projeto
+### :eyes: Para visualizar o projeto:
 
 - https://calculadora-olive.vercel.app/
 
