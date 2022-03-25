@@ -10,9 +10,9 @@
 ---
 
 #### Projetos da Imersão Dev
-1. [Conversor de Moedas](https://github.com/lellismaria/ImersaoDev-Alura/tree/main/O1%20-%20Calculadora%20de%20M%C3%A9dia) 
-2. [Calculadora]
-3. [Mentalista]
+1. [Calculadora de Média](https://github.com/lellismaria/ImersaoDev-Alura/tree/main/O1%20-%20Calculadora%20de%20M%C3%A9dia) 
+2. [Conversor de Moedas](https://github.com/lellismaria/ImersaoDev-Alura/tree/main/O2%20-%20Conversor%20de%20Moedas)
+3. [Mentalista](https://github.com/lellismaria/ImersaoDev-Alura/tree/main/O3%20-%20Mentalista)
 4. [AluraFlix]
 5. [Tabela de Classificação]
 6. [Super Trunfo]
