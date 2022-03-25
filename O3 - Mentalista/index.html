@@ -1,0 +1,123 @@
+<html>
+    <head>
+        <title>Mentalista</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <section>
+            <h1>Mentalista</h1>
+            <h2>Tente descobrir o número de 0 a 10!</h2>
+<style>
+    :root {
+        --color-first: #8B008B;
+        --color-secund: #dfdff7;
+    
+        --color-black-first: #DA70D6;
+        --color-black-secund: #000;
+    }
+    
+    body {
+        background-image: url("https://cdn.livepix.gg/profile/backgrounds/cdf61073-32b5-40b0-90a7-6035ba47eee1.gif");
+        font-family: 'Smooch Sans', sans-serif;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        
+    }
+    
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        background-color: var(--color-first);
+        border: 6px solid var(--color-black-first);
+        color: var(--color-secund);
+        width: 380px;
+        height: 300px;
+        margin-top: -200px;
+        
+    }
+    
+    h1 {
+        font-size: 50px;
+        margin-bottom: 5px;
+        margin-top: 20px;
+    }
+    
+    h2 {
+        margin-bottom: 20px;
+        font-size: 25px;
+        margin-top: 5px;
+    }
+    
+    input {
+        font-family: inherit;
+        width: 190px;
+        height: 35px;
+        border-radius: 15px;
+        border: 3px solid var(--color-black-secund);
+        margin-bottom: 10px;
+        text-align: center;
+        font-size: 25px;
+    }
+    
+    button {
+        width: 80px;
+        height: 35px;
+        font-family: inherit;
+        border-radius: 10px;
+        border: none;
+        font-size: 28px;
+        box-shadow: 4px 4px var(--color-black-secund);
+    }
+    
+    p {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        font-family:inherit;
+        font-size: 20px;
+        color: var(--color-secund);
+        background-color: var(--color-first);
+        border: 5px solid var(--color-black-first);
+        padding: 28px;
+        text-align: center;
+        line-height: 24px;
+        justify-content: center;
+        margin-top: 270px;
+        border-radius: 15px;
+        
+    }        
+</style>
+            <input placeholder="Digite Aqui" type="number" min="0" max="10">
+            <button>Click!</button>           
+    </section>
+
+    <p>
+        OLÁ, JOVEM PADAWAN!
+    </p>
+<script> var aleatorioCerto = parseInt(Math.random() * 11);
+
+    function pegarValor() {
+      var valor= document.querySelector("input").value;
+      var p = document.querySelector("p");
+      
+      if (aleatorioCerto == valor) {
+        p.textContent = "Você Acertou!!!";
+      } else if (aleatorioCerto < valor) {
+         p.textContent = "O número secreto é menor";
+      } else if (aleatorioCerto > valor) {
+         p.textContent = "o número secreto é maior";
+      } 
+    }
+    
+    document.querySelector("button").addEventListener("click", pegarValor);
+</script>
+    <script src="js/script.js"></script>
+    </body>   
+</html>
