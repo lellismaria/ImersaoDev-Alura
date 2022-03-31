@@ -23,13 +23,13 @@ As seguintes ferramentas foram usadas nas construções dos projetos:
 
 ### :eyes: Para visualizar o projeto:
 
-- 
+- https://tabela-de-classificao.netlify.app/
 
 
 ---
 
 # Resultado
-![print]()
+![print](https://64.media.tumblr.com/f66581dbf6da18146cec1c353a9aa085/779e0a15454ea2eb-d9/s2048x3072/6d019ad6f72cb788a4030de969f3bec7e40f6929.pnj)
 
 ---
 
