@@ -21,12 +21,12 @@ As seguintes ferramentas foram usadas nas construções dos projetos:
 
 ### :eyes: Para visualizar o projeto:
 
-
+- https://super-ac-trunfo.netlify.app/
 
 ---
 
 # Resultado
-![print]()
+![print](https://images2.imgbox.com/40/bd/h5r4tA75_o.png)
 
 ---
 
