@@ -13,9 +13,9 @@
 1. [Calculadora de Média](https://github.com/lellismaria/ImersaoDev-Alura/tree/main/O1%20-%20Calculadora%20de%20M%C3%A9dia) 
 2. [Conversor de Moedas](https://github.com/lellismaria/ImersaoDev-Alura/tree/main/O2%20-%20Conversor%20de%20Moedas)
 3. [Mentalista](https://github.com/lellismaria/ImersaoDev-Alura/tree/main/O3%20-%20Mentalista)
-4. [AluraFlix]
-5. [Tabela de Classificação]
-6. [Super Trunfo]
+4. [AluraFlix](https://github.com/lellismaria/ImersaoDev-Alura/tree/main/O4%20-%20GameFlix)
+5. [Tabela de Classificação](https://github.com/lellismaria/ImersaoDev-Alura/tree/main/O5%20-%20Tabela%20de%20Classifica%C3%A7%C3%A3o)
+6. [Super Trunfo](https://github.com/lellismaria/ImersaoDev-Alura/tree/main/O6%20-%20Super%20Trunfo)
 7. [Certificard]
 
 <h2 id="technologies"></h2>
