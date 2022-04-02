@@ -1,10 +1,10 @@
 ![alura](https://i.pinimg.com/originals/c2/48/05/c248059edddbd62ec65af6235998f901.png)
 
-## 🃏 GameFlix
+## 🕹 GameFlix
 
 ## 💻 Sobre o projeto
 
-Neste desafio foi proposto a criação de um jogo de cartas chamado Super Trunfo, onde se tem duas cartas diferentes com atributos para batalhar, dependendo do atributo, vence a carta que tiver o maior valor. 
+Projeto feito na Imersão Alura, que consistiu em fazer uma plataforma inspirada na Netflix. O usuário terá acesso ao Gameflix, uma plataforma totalmente direcionada para aqueles que adoram jogos.
 
 ---
 
@@ -26,7 +26,7 @@ As seguintes ferramentas foram usadas nas construções dos projetos:
 ---
 
 # Resultado
-![print](https://images2.imgbox.com/a5/2d/D1Q9mIqX_o.png)
+![print](https://i.imgur.com/A57Evmf.png)
 
 ---
 ### 📝 Licença
