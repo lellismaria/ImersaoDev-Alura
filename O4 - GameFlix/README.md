@@ -21,7 +21,7 @@ As seguintes ferramentas foram usadas nas construções dos projetos:
 
 ### :eyes: Para visualizar o projeto:
 
-- Você pode acessar o projeto clicando <a href="https://game-flix-pj.netlify.app//">aqui</a>. 
+- Você pode acessar o projeto clicando <a href="https://game-flix-pj.netlify.app/">aqui</a>. 
 
 ---
 
