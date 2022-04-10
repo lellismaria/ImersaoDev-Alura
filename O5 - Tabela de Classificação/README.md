@@ -1,8 +1,6 @@
 ![alura](https://i.pinimg.com/originals/c2/48/05/c248059edddbd62ec65af6235998f901.png)
 
-
-
-# 🏆 Tabela de Classificação
+<h1 align="center"> 🏆 Tabela de Classificação</h1>
 
 ## 💻 Sobre o projeto
 
@@ -14,21 +12,21 @@ Neste projeto foi feito uma tabela de classificação simples, com botões para 
 
 As seguintes ferramentas foram usadas nas construções dos projetos:
 
-- Editor [CondePen](https://codepen.io/)
-- [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
-- [HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
-- [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![CodePen](https://img.shields.io/badge/Codepen-000000?style=for-the-badge&logo=codepen&logoColor=white)
 
 ---
 
 ### :eyes: Para visualizar o projeto:
 
-- https://tabela-de-classificao.netlify.app/
+- Você pode acessar o projeto clicando <a href="https://tabela-de-classificao.netlify.app/">aqui</a>.
 
 ---
 
 # Resultado
-![print](https://images2.imgbox.com/e2/a9/vurpnOVM_o.png)
+![print](https://i.imgur.com/sd8nGJH.png)
 
 ---
 
