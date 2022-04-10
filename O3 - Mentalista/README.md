@@ -1,8 +1,6 @@
 ![alura](https://i.pinimg.com/originals/c2/48/05/c248059edddbd62ec65af6235998f901.png)
 
-
-
-# 🔮 Mentalista
+<h1 align="center"> 🔮 Mentalista</h1>
 
 ## 💻 Sobre o projeto
 
@@ -14,16 +12,16 @@ Aula 03 da Imersão Dev da Alura. Dessa vez, foi proposto pela equipe que fizess
 
 As seguintes ferramentas foram usadas nas construções dos projetos:
 
-- Editor [CondePen](https://codepen.io/)
-- [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
-- [HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
-- [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![CodePen](https://img.shields.io/badge/Codepen-000000?style=for-the-badge&logo=codepen&logoColor=white)
 
 ---
 
 ### :eyes: Para visualizar o projeto:
 
-- https://mentalista-murex.vercel.app/
+- Você pode acessar o projeto clicando <a href="https://mentalista-murex.vercel.app/">aqui</a>.
 
 
 ----
