@@ -31,4 +31,4 @@ As seguintes ferramentas foram usadas nas construções dos projetos:
 ---
 ### 📝 Licença
 
-Este projeto esta sobe a licença [MIT](./license.txt)
+O projeto se encontra sob licença MIT. Para mais detalhes, acesse [license](LICENSE).
